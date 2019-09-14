@@ -17,6 +17,11 @@ class LocalFeedLoader : FeedLoader {
 }
 
 struct NetworkManager {
+    enum State {
+        case available
+        case disable
+    }
+
     static let shared = NetworkManager()
 }
 
